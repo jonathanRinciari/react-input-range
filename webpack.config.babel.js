@@ -1,4 +1,4 @@
-import ExtractTextPlugin from 'extract-text-webpack-plugin';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import UglifyJsPlugin from 'uglifyjs-webpack-plugin';
 import path from 'path';
 
@@ -26,15 +26,21 @@ const webpackConfig = {
       },
       {
         include: path.resolve(__dirname, 'src'),
-        loader: ExtractTextPlugin.extract({
-          use: ['css-loader', 'postcss-loader', 'sass-loader'],
-        }),
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader
+          },
+          'css-loader', 'postcss-loader', 'sass-loader'
+        ],
         test: /\.scss$/,
       },
     ],
   },
   plugins: [
-    new ExtractTextPlugin('[name]'),
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+      ignoreOrder: false
+    }),
     new UglifyJsPlugin({
       sourceMap: true,
       test: /\.min\.js$/,
