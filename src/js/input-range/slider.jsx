@@ -249,7 +249,6 @@ export default class Slider extends React.Component {
           type="value">
           {this.props.value}
         </Label>
-
         <div
           aria-labelledby={this.props.ariaLabelledby}
           aria-controls={this.props.ariaControls}
@@ -262,7 +261,16 @@ export default class Slider extends React.Component {
           onMouseDown={this.handleMouseDown}
           onTouchStart={this.handleTouchStart}
           role="slider"
-          tabIndex="0" />
+          tabIndex="0">
+          <svg
+            style={{
+              position: 'relative',
+              bottom: '12%',
+              left: '30%',
+            }} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 6" height="8px" width="8px">
+            <path stroke="#898B8E" strokeWidth="0.5" d="M.5 0v5M2.5 0v5M4.5 0v5" />
+          </svg>
+        </div>
       </span>
     );
   }

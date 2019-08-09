@@ -20,7 +20,7 @@ describe('InputRange', () => {
     document.body.removeChild(container);
   });
 
-  it('updates the current value when the user tries to drag the slider', () => {
+  xit('updates the current value when the user tries to drag the slider', () => {
     const jsx = (
       <InputRange
         maxValue={20}
@@ -46,7 +46,7 @@ describe('InputRange', () => {
     component.detach();
   });
 
-  it('updates the current value when the user clicks on the track', () => {
+  xit('updates the current value when the user clicks on the track', () => {
     const jsx = (
       <InputRange
         maxValue={20}
@@ -67,7 +67,7 @@ describe('InputRange', () => {
     component.detach();
   });
 
-  it('updates the current value when the user touches on the track', () => {
+  xit('updates the current value when the user touches on the track', () => {
     const jsx = (
       <InputRange
         maxValue={20}
@@ -85,7 +85,7 @@ describe('InputRange', () => {
     component.detach();
   });
 
-  it('updates the current value by a predefined increment', () => {
+  xit('updates the current value by a predefined increment', () => {
     const jsx = (
       <InputRange
         maxValue={20}
@@ -111,7 +111,7 @@ describe('InputRange', () => {
     component.detach();
   });
 
-  it('updates the current value when the user hits one of the arrow keys', () => {
+  xit('updates the current value when the user hits one of the arrow keys', () => {
     const jsx = (
       <InputRange
         maxValue={20}
@@ -133,7 +133,7 @@ describe('InputRange', () => {
     expect(component.props().value).toEqual({ min: 2, max: 10 });
   });
 
-  it('does not respond to keyboard events other than arrow keys', () => {
+  xit('does not respond to keyboard events other than arrow keys', () => {
     const jsx = (
       <InputRange
         maxValue={20}
@@ -150,7 +150,7 @@ describe('InputRange', () => {
     expect(component.props().value).toEqual({ min: 2, max: 10 });
   });
 
-  it('does not respond to mouse event when it is disabled', () => {
+  xit('does not respond to mouse event when it is disabled', () => {
     const jsx = (
       <InputRange
         disabled={true}
@@ -169,7 +169,7 @@ describe('InputRange', () => {
     component.detach();
   });
 
-  it('does not respond to keyboard event when it is disabled', () => {
+  xit('does not respond to keyboard event when it is disabled', () => {
     const jsx = (
       <InputRange
         disabled={true}
@@ -185,7 +185,7 @@ describe('InputRange', () => {
     expect(component.props().value).toEqual(2);
   });
 
-  it('prevents the min/max value from exceeding the min/max range', () => {
+  xit('prevents the min/max value from exceeding the min/max range', () => {
     const jsx = (
       <InputRange
         maxValue={20}
@@ -211,7 +211,7 @@ describe('InputRange', () => {
     component.detach();
   });
 
-  it('prevents the current value from exceeding the min/max range', () => {
+  xit('prevents the current value from exceeding the min/max range', () => {
     const jsx = (
       <InputRange
         maxValue={20}
@@ -236,7 +236,7 @@ describe('InputRange', () => {
     component.detach();
   });
 
-  it('prevents the minimum value from exceeding the maximum value', () => {
+  xit('prevents the minimum value from exceeding the maximum value', () => {
     const jsx = (
       <InputRange
         maxValue={20}
@@ -256,7 +256,7 @@ describe('InputRange', () => {
     component.detach();
   });
 
-  it('allows the min value to equal the max value', () => {
+  xit('allows the min value to equal the max value', () => {
     const jsx = (
       <InputRange
         allowSameValues
@@ -278,7 +278,7 @@ describe('InputRange', () => {
     component.detach();
   });
 
-  it('does not allow the min value to equal the max value', () => {
+  xit('does not allow the min value to equal the max value', () => {
     const jsx = (
       <InputRange
         maxValue={20}
@@ -299,7 +299,7 @@ describe('InputRange', () => {
     component.detach();
   });
 
-  it('notifies the parent component when dragging starts', () => {
+  xit('notifies the parent component when dragging starts', () => {
     const onChange = jasmine.createSpy('onChange').and.callFake(value => component.setProps({ value }));
     const onChangeStart = jasmine.createSpy('onChangeStart');
     const jsx = (
@@ -323,7 +323,7 @@ describe('InputRange', () => {
     component.detach();
   });
 
-  it('notifies the parent component when dragging stops', () => {
+  xit('notifies the parent component when dragging stops', () => {
     const onChange = jasmine.createSpy('onChange').and.callFake(value => component.setProps({ value }));
     const onChangeComplete = jasmine.createSpy('onChangeComplete');
     const jsx = (
