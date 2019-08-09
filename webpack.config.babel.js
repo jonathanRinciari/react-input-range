@@ -40,11 +40,7 @@ const webpackConfig = {
     new MiniCssExtractPlugin({
       filename: '[name].css',
       ignoreOrder: false
-    }),
-    new UglifyJsPlugin({
-      sourceMap: true,
-      test: /\.min\.js$/,
-    }),
+    })
   ],
   resolve: {
     modules: ['node_modules'],

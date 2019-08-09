@@ -34,7 +34,6 @@ const webpackExampleConfig = {
           'css-loader', 'postcss-loader', 'sass-loader'
         ],
         test: /\.scss$/,
-        
       }, {
         include: [
           path.resolve(__dirname, 'src'),
