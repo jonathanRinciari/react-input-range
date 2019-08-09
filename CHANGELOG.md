@@ -1,3 +1,25 @@
+<a name="0.0.1"></a>
+## [0.0.1](https://github.com/davidchin/react-input-range/compare/v1.3.0...v0.0.1) (2019-08-09)
+
+
+### Bug Fixes
+
+* Updated example ([3f280de](https://github.com/davidchin/react-input-range/commit/3f280de))
+* Updated logic for determining if within range ([0f4fd35](https://github.com/davidchin/react-input-range/commit/0f4fd35))
+
+
+
+<a name="0.0.2"></a>
+## [0.0.2](https://github.com/davidchin/react-input-range/compare/v1.3.0...v0.0.2) (2019-08-09)
+
+
+### Bug Fixes
+
+* Updated example ([3f280de](https://github.com/davidchin/react-input-range/commit/3f280de))
+* Updated logic for determining if within range ([0f4fd35](https://github.com/davidchin/react-input-range/commit/0f4fd35))
+
+
+
 <a name="1.3.0"></a>
 # [1.3.0](https://github.com/davidchin/react-input-range/compare/v1.2.2...v1.3.0) (2018-01-06)
 
