@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import SasslintPlugin from 'sasslint-webpack-plugin';
 import path from 'path';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
 const webpackExampleConfig = {
   context: __dirname,

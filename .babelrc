@@ -1,9 +1,17 @@
 {
-  "plugins": [
-    "add-module-exports",
-    "transform-object-rest-spread",
-    "transform-decorators-legacy",
-    "transform-react-jsx"
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "esmodules": true
+        }
+      }
+      ], "@babel/react"
   ],
-  "presets": ["es2015", "es2016", "react"]
+  "plugins": [
+    "transform-class-properties",
+    "istanbul",
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+  ]
 }

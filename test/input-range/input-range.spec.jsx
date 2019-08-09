@@ -120,9 +120,10 @@ describe('InputRange', () => {
         onChange={value => component.setProps({ value })}
       />
     );
-    const component = mount(jsx);
-    const slider = component.find(`Slider [onKeyDown]`).first();
 
+    const component = shallow(jsx);
+    const slider = component.find(`Slider [onKeyDown]`).first();
+    console.log(slider.props())
     slider.simulate('keyDown', { keyCode: 37 });
     slider.simulate('keyUp', { keyCode: 37 });
     expect(component.props().value).toEqual({ min: 1, max: 10 });
