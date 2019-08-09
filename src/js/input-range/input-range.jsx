@@ -206,13 +206,16 @@ export default class InputRange extends React.Component {
    */
   isWithinRange(values) {
     if (this.isMultiValue()) {
-      return values.min >= this.props.minValue &&
-             values.max <= this.props.maxValue &&
-             this.props.allowSameValues
-        ? values.min <= values.max
-        : values.min < values.max;
+      if (values.min >= this.props.minValue && values.max <= this.props.maxValue) {
+        if (values.min < values.max && values.max > values.min) {
+          return true;
+        } else if (this.props.allowSameValues && values.min <= values.max && values.max >= values.min) {
+          return true;
+        }
+        return false;
+      }
+      return false;
     }
-
     return values.max >= this.props.minValue && values.max <= this.props.maxValue;
   }
 
@@ -316,7 +319,6 @@ export default class InputRange extends React.Component {
   decrementValue(key) {
     const values = valueTransformer.getValueFromProps(this.props, this.isMultiValue());
     const value = values[key] - this.props.step;
-
     this.updateValue(key, value);
   }
 
