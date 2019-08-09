@@ -56,7 +56,7 @@ export default class ExampleApp extends React.Component {
         <InputRange
           maxValue={20}
           minValue={0}
-          formatLabel={value => `${value}kg`}
+          formatLabel={value => `$${value}`}
           value={this.state.value4}
           onChange={value => this.setState({ value4: value })}
           onChangeComplete={value => console.log(value)} />
