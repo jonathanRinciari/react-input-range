@@ -70,6 +70,7 @@
     "react-dom": "^15.0.0 || ^16.0.0"
   },
   "scripts": {
+    "prebuild": "npm test && rm -rf lib",
     "build": "npm run build:lib && npm run build:scss && npm run build:bundle",
     "build:bundle": "NODE_ENV=production webpack",
     "build:lib": "NODE_ENV=production babel src/js --out-dir lib/js --source-maps",
@@ -82,7 +83,7 @@
     "lint:scss": "sass-lint --verbose --no-exit",
     "prepublish": "npm run build",
     "pretest": "npm run lint",
-    "test": "jest src/**/*.spec.js",
+    "test": "jest test/**/*.spec.jsx",
     "preversion": "npm test",
     "version": "npm run changelog && git add CHANGELOG.md"
   },

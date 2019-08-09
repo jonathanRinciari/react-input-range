@@ -31,13 +31,12 @@ env:
   browser: true
   jasmine: true
 extends: airbnb
-ecmaFeatures:
-  jsx: true
-  experimentalObjectRestSpread: true
-  modules: true
 parser: babel-eslint
 parserOptions:
   ecmaFeatures:
     jsx: true
+    experimentalObjectRestSpread: true
+    modules: true
+    experimentalDecorators: true
 plugins:
   - react
