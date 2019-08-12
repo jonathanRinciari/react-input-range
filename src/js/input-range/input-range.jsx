@@ -10,7 +10,6 @@ import Slider from './slider';
 import Track from './track';
 import { captialize, distanceTo, isDefined, isObject, length } from '../utils';
 import { DOWN_ARROW, LEFT_ARROW, RIGHT_ARROW, UP_ARROW } from './key-codes';
-import '../../scss/index.scss';
 
 /**
  * A React component that allows users to input numeric values within a range
