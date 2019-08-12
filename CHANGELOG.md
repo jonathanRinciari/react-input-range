@@ -1,3 +1,8 @@
+<a name="0.0.2"></a>
+## [0.0.2](https://github.com/davidchin/react-input-range/compare/v0.0.1...v0.0.2) (2019-08-12)
+
+
+
 <a name="0.0.1"></a>
 ## [0.0.1](https://github.com/davidchin/react-input-range/compare/v1.3.0...v0.0.1) (2019-08-09)
 
