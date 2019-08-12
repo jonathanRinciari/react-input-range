@@ -1,3 +1,13 @@
+<a name="0.0.3"></a>
+## [0.0.3](https://github.com/davidchin/react-input-range/compare/v0.0.2...v0.0.3) (2019-08-12)
+
+
+### Bug Fixes
+
+* Updated tests and added default styles ([58c0f95](https://github.com/davidchin/react-input-range/commit/58c0f95))
+
+
+
 <a name="0.0.2"></a>
 ## [0.0.2](https://github.com/davidchin/react-input-range/compare/v0.0.1...v0.0.2) (2019-08-12)
 
